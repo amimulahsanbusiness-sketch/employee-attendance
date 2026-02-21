@@ -1,0 +1,21 @@
+{
+    "install": {
+        "include": [
+            "^package\\.json$",
+            "^\\.env$"
+        ]
+    },
+    "restart": {
+        "exclude": [
+            "^attendance\\.db$",
+            "^dist/.*",
+            "^\\.data/.*"
+        ],
+        "include": [
+            "\\.js$",
+            "\\.ts$",
+            "\\.json"
+        ]
+    },
+    "throttle": 900000
+}
